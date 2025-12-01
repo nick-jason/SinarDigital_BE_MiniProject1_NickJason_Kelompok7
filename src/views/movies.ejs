@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movies - CineRate</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg,#1a1a2e 0%,#16213e 100%); color:#fff; margin:0; }
+    nav{ background: rgba(0,0,0,0.8); padding:1rem 0; }
+    nav .container{ max-width:1200px; margin:0 auto; padding:0 20px; display:flex; justify-content:space-between; align-items:center }
+    nav .logo{ color:#e94560; font-weight:700 }
+    nav ul{ list-style:none; display:flex; gap:1rem }
+    nav a{ color:#fff; text-decoration:none }
+    nav a:hover{ color:#e94560 }
+
+    .container-main{ max-width:1200px; margin:2.5rem auto; padding:0 20px }
+    h1{ font-size:2rem; margin-bottom:0.5rem; background:linear-gradient(135deg,#e94560,#ff6b6b); -webkit-background-clip:text; -webkit-text-fill-color:transparent }
+    p.lead{ color:#bbb; margin-bottom:1.5rem }
+
+    .grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem }
+    .card{ background: rgba(255,255,255,0.03); padding:16px; border-radius:10px; border:1px solid rgba(233,69,96,0.08); }
+    .poster{ height:160px; border-radius:8px; background:linear-gradient(135deg,#667eea,#764ba2); display:flex; align-items:center; justify-content:center; font-size:3rem; margin-bottom:12px }
+    .title{ font-weight:700; margin-bottom:6px }
+    .meta{ color:#bbb; font-size:0.9rem; margin-bottom:8px }
+    .rating{ color:#e94560; font-weight:700; margin-bottom:12px }
+    .btn{ display:inline-block; padding:10px 14px; border-radius:6px; background:linear-gradient(135deg,#e94560,#ff6b6b); color:#fff; text-decoration:none }
+    .btn.secondary{ background:transparent; border:1px solid rgba(233,69,96,0.2); color:#e94560 }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">🎬 CineRate</div>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/movies">Movies</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container-main">
+    <h1>Movies</h1>
+    <p class="lead">Browse current movies and click Rate to provide your review.</p>
+
+    <div class="grid">
+      <% if (movies && movies.length > 0) { %>
+        <% movies.forEach(movie => { %>
+          <div class="card">
+            <div class="poster">🎞️</div>
+            <div class="title"><%= movie.moviename %></div>
+            <div class="meta"><%= movie.genre %> • <%= movie.description %></div>
+            <div class="rating">Rating: <%= movie.rating || 'N/A' %></div>
+            <a class="btn" href="/submission?movieId=<%= movie.id %>&movie=<%= encodeURIComponent(movie.moviename) %>">Rate</a>
+          </div>
+        <% }) %>
+      <% } else { %>
+        <p style="color:#bbb">No movies available</p>
+      <% } %>
+    </div>
+  </main>
+
+  <footer style="text-align:center;padding:2rem;color:#bbb">&copy; <%= new Date().getFullYear() %> CineRate</footer>
+</body>
+</html>

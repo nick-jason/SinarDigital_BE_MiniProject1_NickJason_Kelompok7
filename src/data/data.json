@@ -1,0 +1,79 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "moviename": "Agak Lain",
+      "description": "A comedic adventure with unexpected twists.",
+      "genre": "Comedy",
+      "rating": 8
+    },
+    {
+      "id": 2,
+      "moviename": "Zootopia",
+      "description": "A rookie rabbit cop teams up with a sly fox to solve a major case.",
+      "genre": "Animation / Family",
+      "rating": 8.5
+    },
+    {
+      "id": 3,
+      "moviename": "Sampai Titik Terakhirmu",
+      "description": "A dramatic romance about loyalty and sacrifices.",
+      "genre": "Romance / Drama",
+      "rating": 7.8
+    },
+    {
+      "id": 4,
+      "moviename": "Wicked: Part Two",
+      "description": "A fantasy musical exploring untold sides of Oz.",
+      "genre": "Fantasy / Musical",
+      "rating": 8.2
+    },
+    {
+      "id": 5,
+      "moviename": "Kisah Nyata Malin Kundang",
+      "description": "A darker reimagining of the legendary folk tale.",
+      "genre": "Drama / Thriller",
+      "rating": 7.6
+    },
+    {
+      "id": 6,
+      "moviename": "Now You See Me: Indomagic",
+      "description": "A team of illusionists performs heists using magic tricks.",
+      "genre": "Crime / Mystery",
+      "rating": 7.9
+    },
+    {
+      "id": 7,
+      "moviename": "Immersion",
+      "description": "A suspenseful story about technological experiments gone wrong.",
+      "genre": "Sci-Fi / Thriller",
+      "rating": 8.1
+    },
+    {
+      "id": 8,
+      "moviename": "Gara-Gara Cicilang",
+      "description": "A comedic look at the chaos of financial debts.",
+      "genre": "Comedy / Drama",
+      "rating": 7.5
+    },
+    {
+      "id": 9,
+      "moviename": "Cyberbullying",
+      "description": "A school drama highlighting the impact of online harassment.",
+      "genre": "Drama",
+      "rating": 7.2
+    }
+  ],
+  "submissions": [
+    {
+      "id": 1,
+      "name": "Nick Jason",
+      "email": "nickjason2007@gmail.com",
+      "message": "Sangat lucu & ngakak sekali",
+      "rating": 5,
+      "movie": "Agak Lain",
+      "movieId": 1,
+      "timestamp": "2025-12-01T13:07:10.392Z"
+    }
+  ]
+}
