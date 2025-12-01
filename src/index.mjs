@@ -1,10 +1,11 @@
 import express from "express";
 import userRoute from './routes/User.mjs';
 import commentsRoute from './routes/Comments.mjs';
-import productRoute from './routes/Products.mjs';
+import productRoute from './routes/Product.mjs';
 
 const app = express();
 const PORT =  process.env.PORT || 3000;
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Server is running 🚀");

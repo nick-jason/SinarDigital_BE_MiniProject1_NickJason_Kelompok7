@@ -1,12 +1,10 @@
-import productRoute from './../products/Products.mjs';
+import product from '../products/Products.mjs';
 import express from "express";
 const router = express.Router()
 
-router.use("/", productRoute);
+router.get("/", product.getProduct)
+router.post("/", product.createProduct)
+router.put("/:id", product.editProduct)
+router.delete("/:id", product.deleteProduct)
 
-router.get("/", productRoute.getProduct)
-router.post("/", productRoute.createProduct)
-router.put("/:id", productRoute.editProduct)
-router.delete("/:id", productRoute.deleteProduct)
-
-export default router;r
+export default router;

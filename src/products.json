@@ -1,22 +1,28 @@
 [
-    {
-        "id": 1,
-        "name": "product 1",
-        "description": "description 1"
-    },
-    {
-        "id": 2,
-        "name": "product 2",
-        "description": "description 2"
-    },
-    {
-        "id": 3,
-        "name": "product 3",
-        "description": "description 3"
-    },
-    {
-        "id": 4,
-        "name": "product 4",
-        "description": "description 4"
-    }
+  {
+    "id": 1,
+    "name": "product 1",
+    "description": "description 1"
+  },
+  {
+    "id": 2,
+    "name": "product 2",
+    "description": "description 2"
+  },
+  {
+    "id": 3,
+    "name": "product 3",
+    "description": "description 3"
+  },
+  {
+    "id": 4,
+    "name": "HRD",
+    "description": "Human Resource Development",
+    "price": 150000
+  },
+  {
+    "id": 5,
+    "name": "RND",
+    "description": "Research and Development"
+  }
 ]
