@@ -1,7 +1,7 @@
 # SinarDigital_BE_MiniProject1_NickJason_Kelompok7
 
 ## Description
-This is a backend project built using Node.js + EJS (with some JavaScript) that powers the backend for an Cinema Rating application.
+This is a backend project built using Node.js + JavaScript with EJS as view engine that powers the backend for an Cinema Rating application.
 
 ## Table of Contents
 
